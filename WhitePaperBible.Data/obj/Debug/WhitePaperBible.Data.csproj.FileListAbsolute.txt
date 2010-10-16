@@ -1,0 +1,5 @@
+C:\Development\WhitePaperBible\WhitePaperBible.Data\Bin\Debug\WhitePaperBible.Data.dll
+C:\Development\WhitePaperBible\WhitePaperBible.Data\Bin\Debug\WhitePaperBible.Data.pdb
+C:\Development\WhitePaperBible\WhitePaperBible.Data\obj\Debug\ResolveAssemblyReference.cache
+C:\Development\WhitePaperBible\WhitePaperBible.Data\obj\Debug\WhitePaperBible.Data.dll
+C:\Development\WhitePaperBible\WhitePaperBible.Data\obj\Debug\WhitePaperBible.Data.pdb

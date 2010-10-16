@@ -1,0 +1,6 @@
+<Modules>
+  <Module PersistentId="A2FECDEE-F94A-463E-A411-36C09C670AF5" ModuleId="WhitePaperBible.Data" />
+  <Module PersistentId="B3DF9CA9-FF06-4722-8C99-3C053BD09603" ModuleId="WhitePaperBible.Services" />
+  <Module PersistentId="914D0528-BF1D-43EC-A736-6E9069047252" ModuleId="WhitePaperBible.Tests" />
+  <Module PersistentId="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F" ModuleId="WhitePaperBible.Phone" />
+</Modules>

@@ -1,0 +1,9 @@
+C:\Development\WhitePaperBible\WhitePaperBible.Services\Bin\Debug\WhitePaperBible.Services.dll
+C:\Development\WhitePaperBible\WhitePaperBible.Services\Bin\Debug\WhitePaperBible.Services.pdb
+C:\Development\WhitePaperBible\WhitePaperBible.Services\obj\Debug\ResolveAssemblyReference.cache
+C:\Development\WhitePaperBible\WhitePaperBible.Services\obj\Debug\WhitePaperBible.Services.dll
+C:\Development\WhitePaperBible\WhitePaperBible.Services\obj\Debug\WhitePaperBible.Services.pdb
+C:\Development\WhitePaperBible\WhitePaperBible.Services\Bin\Debug\WhitePaperBible.Data.dll
+C:\Development\WhitePaperBible\WhitePaperBible.Services\Bin\Debug\WhitePaperBible.Data.pdb
+C:\Development\WhitePaperBible\WhitePaperBible.Services\Bin\Debug\Newtonsoft.Json.Silverlight.dll
+C:\Development\WhitePaperBible\WhitePaperBible.Services\Bin\Debug\RestSharp.WindowsPhone.dll

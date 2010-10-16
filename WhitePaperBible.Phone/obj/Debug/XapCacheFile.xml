@@ -1,0 +1,12 @@
+﻿<xapCache source="C:\Development\WhitePaperBible\WhitePaperBible.Phone\Bin\Debug\WhitePaperBible.Phone.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="10/15/2010 11:44:15 PM">
+  <file source="C:\Development\WhitePaperBible\WhitePaperBible.Phone\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="10/15/2010 8:20:33 PM" />
+  <file source="C:\Development\WhitePaperBible\WhitePaperBible.Phone\obj\Debug\WhitePaperBible.Phone.dll" archivePath="WhitePaperBible.Phone.dll" lastWriteTime="10/15/2010 11:44:15 PM" />
+  <file source="C:\Development\WhitePaperBible\WhitePaperBible.Data\Bin\Debug\WhitePaperBible.Data.dll" archivePath="WhitePaperBible.Data.dll" lastWriteTime="10/15/2010 5:45:43 PM" />
+  <file source="C:\Development\WhitePaperBible\WhitePaperBible.Services\Bin\Debug\WhitePaperBible.Services.dll" archivePath="WhitePaperBible.Services.dll" lastWriteTime="10/15/2010 11:44:14 PM" />
+  <file source="C:\Development\WhitePaperBible\WhitePaperBible.Services\Bin\Debug\RestSharp.WindowsPhone.dll" archivePath="RestSharp.WindowsPhone.dll" lastWriteTime="10/15/2010 10:44:41 PM" />
+  <file source="C:\Development\WhitePaperBible\WhitePaperBible.Services\Bin\Debug\Newtonsoft.Json.Silverlight.dll" archivePath="Newtonsoft.Json.Silverlight.dll" lastWriteTime="10/15/2010 9:02:33 PM" />
+  <file source="C:\Development\WhitePaperBible\WhitePaperBible.Phone\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="10/15/2010 8:20:33 PM" />
+  <file source="C:\Development\WhitePaperBible\WhitePaperBible.Phone\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="10/15/2010 8:20:33 PM" />
+  <file source="C:\Development\WhitePaperBible\WhitePaperBible.Phone\Background.png" archivePath="Background.png" lastWriteTime="10/15/2010 8:20:33 PM" />
+  <file source="C:\Development\WhitePaperBible\WhitePaperBible.Phone\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="10/15/2010 11:23:13 PM" />
+</xapCache>

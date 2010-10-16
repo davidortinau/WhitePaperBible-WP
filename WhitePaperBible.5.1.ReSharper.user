@@ -1,0 +1,119 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="A2FECDEE-F94A-463E-A411-36C09C670AF5/f:Paper.cs" caret="410" fromTop="10" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/d:ViewModels/f:ItemViewModel.cs" caret="369" fromTop="0" />
+      <File id="B3DF9CA9-FF06-4722-8C99-3C053BD09603/f:DataSync.cs" caret="2877" fromTop="82" />
+      <File id="914D0528-BF1D-43EC-A736-6E9069047252/f:UnitTest1.cs" caret="1942" fromTop="12" />
+      <File id="B3DF9CA9-FF06-4722-8C99-3C053BD09603/f:PaperService.cs" caret="1525" fromTop="21" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:App.xaml.cs" caret="4523" fromTop="82" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/d:ViewModels/f:MainViewModel.cs" caret="2614" fromTop="32" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="B3DF9CA9-FF06-4722-8C99-3C053BD09603/f:PaperService.cs" caret="3399" fromTop="45" />
+      <File id="B3DF9CA9-FF06-4722-8C99-3C053BD09603/f:PaperService.cs" caret="1542" fromTop="23" />
+      <File id="B3DF9CA9-FF06-4722-8C99-3C053BD09603/f:PaperService.cs" caret="2908" fromTop="30" />
+      <File id="B3DF9CA9-FF06-4722-8C99-3C053BD09603/f:PaperService.cs" caret="3276" fromTop="25" />
+      <File id="914D0528-BF1D-43EC-A736-6E9069047252/f:UnitTest1.cs" caret="2034" fromTop="42" />
+      <File id="B3DF9CA9-FF06-4722-8C99-3C053BD09603/f:PaperService.cs" caret="1360" fromTop="26" />
+      <File id="B3DF9CA9-FF06-4722-8C99-3C053BD09603/f:PaperService.cs" caret="1295" fromTop="22" />
+      <File id="B3DF9CA9-FF06-4722-8C99-3C053BD09603/f:PaperService.cs" caret="1182" fromTop="18" />
+      <File id="B3DF9CA9-FF06-4722-8C99-3C053BD09603/f:PaperService.cs" caret="989" fromTop="14" />
+      <File id="914D0528-BF1D-43EC-A736-6E9069047252/f:UnitTest1.cs" caret="2398" fromTop="38" />
+      <File id="914D0528-BF1D-43EC-A736-6E9069047252/f:UnitTest1.cs" caret="2164" fromTop="36" />
+      <File id="914D0528-BF1D-43EC-A736-6E9069047252/f:UnitTest1.cs" caret="1985" fromTop="13" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:App.xaml.cs" caret="3136" fromTop="26" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/d:ViewModels/f:MainViewModel.cs" caret="671" fromTop="23" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/d:ViewModels/f:MainViewModel.cs" caret="747" fromTop="20" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/d:ViewModels/f:MainViewModel.cs" caret="1990" fromTop="33" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/d:ViewModels/f:MainViewModel.cs" caret="1887" fromTop="9" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/d:ViewModels/f:MainViewModel.cs" caret="2171" fromTop="26" />
+      <File id="B3DF9CA9-FF06-4722-8C99-3C053BD09603/f:PaperService.cs" caret="735" fromTop="2" />
+      <File id="B3DF9CA9-FF06-4722-8C99-3C053BD09603/f:PaperService.cs" caret="971" fromTop="3" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:@Microsoft.VisualStudio.TestTools.UnitTesting.Assert">
+      <Item value="IsNotNull`0" priority="1" />
+      <Item value="IsTrue`0" priority="0" />
+      <Item value="Fail`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Default">
+      <Item value="Assert`0" priority="2" />
+      <Item value="papers" priority="2" />
+      <Item value="var" priority="1" />
+      <Item value="Paper`0" priority="10" />
+      <Item value="List" priority="4" />
+      <Item value="void" priority="0" />
+      <Item value="Data" priority="0" />
+      <Item value="client" priority="1" />
+      <Item value="this" priority="2" />
+      <Item value="throw" priority="0" />
+      <Item value="new" priority="1" />
+      <Item value="Exception" priority="0" />
+      <Item value="ResponseStatus`0" priority="0" />
+      <Item value="response" priority="0" />
+      <Item value="svc" priority="0" />
+      <Item value="PaperService`0" priority="0" />
+      <Item value="Exception`0" priority="0" />
+      <Item value="obj" priority="0" />
+      <Item value="foreach" priority="1" />
+      <Item value="paper" priority="0" />
+      <Item value="request" priority="2" />
+      <Item value="Json" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="LastIndexOf`0" priority="0" />
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@RestSharp.Method">
+      <Item value="GET" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:RestSharp.RestClient">
+      <Item value="UserAgent" priority="0" />
+      <Item value="ExecuteAsync`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WhitePaperBible.Tests.UnitTest1">
+      <Item value="DataContext" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@RestSharp.ResponseStatus">
+      <Item value="Error" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:RestSharp.RestResponse`1">
+      <Item value="ErrorMessage" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WhitePaperBible.Services.PaperService">
+      <Item value="GetPapers`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WhitePaperBible.Phone.MainViewModel">
+      <Item value="Items" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.ObjectModel.ObservableCollection`1">
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:RestSharp.RestRequest">
+      <Item value="RequestFormat" priority="0" />
+      <Item value="JsonSerializer" priority="0" />
+      <Item value="RootElement" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

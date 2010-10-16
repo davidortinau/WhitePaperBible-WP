@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="643052c5-245c-4cf3-9e79-007f5152542b" name="David@DAVID-PC 2010-10-15 23:15:32" runUser="David-PC\David" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="e3806303-e089-4f10-bb32-2e32b5244119">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="David_DAVID-PC 2010-10-15 23_15_32">
+      <DeploymentItem filename="C:\Development\WhitePaperBible\WhitePaperBible.Data\Bin\Debug\WhitePaperBible.Data.dll" />
+      <DeploymentItem filename="C:\Development\WhitePaperBible\WhitePaperBible.Services\Bin\Debug\WhitePaperBible.Services.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2010-10-15T23:15:32.6134001-05:00" queuing="2010-10-15T23:15:33.3864432-05:00" start="2010-10-15T23:15:33.5264512-05:00" finish="2010-10-15T23:16:12.8509998-05:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="DAVID-PC" outcome="Error" timestamp="2010-10-15T23:16:12.8499997-05:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CanRetrieveAListOfPapers" storage="c:\development\whitepaperbible\whitepaperbible.tests\bin\debug\whitepaperbible.tests.dll" id="6110bd62-6c84-a71e-47a6-dd2bc1bc724b">
+      <Execution id="e5d451cf-fa45-412b-91bf-9784b49ba2f5" />
+      <TestMethod codeBase="C:/Development/WhitePaperBible/WhitePaperBible.Tests/bin/Debug/WhitePaperBible.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="WhitePaperBible.Tests.UnitTest1, WhitePaperBible.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CanRetrieveAListOfPapers" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="6110bd62-6c84-a71e-47a6-dd2bc1bc724b" executionId="e5d451cf-fa45-412b-91bf-9784b49ba2f5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="e5d451cf-fa45-412b-91bf-9784b49ba2f5" testId="6110bd62-6c84-a71e-47a6-dd2bc1bc724b" testName="CanRetrieveAListOfPapers" computerName="DAVID-PC" duration="00:00:39.1705398" startTime="2010-10-15T23:15:33.6804600-05:00" endTime="2010-10-15T23:16:12.8509998-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e5d451cf-fa45-412b-91bf-9784b49ba2f5">
+    </UnitTestResult>
+  </Results>
+</TestRun>
