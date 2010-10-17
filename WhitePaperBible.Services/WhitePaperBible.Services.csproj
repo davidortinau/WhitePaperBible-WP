@@ -42,12 +42,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
-    <Reference Include="Newtonsoft.Json.Silverlight">
-      <HintPath>..\References\Newtonsoft.Json.Silverlight.dll</HintPath>
-    </Reference>
-    <Reference Include="RestSharp.WindowsPhone">
-      <HintPath>..\References\RestSharp.WindowsPhone.dll</HintPath>
-    </Reference>
+    <Reference Include="Newtonsoft.Json.Silverlight, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
     <Reference Include="System.Net" />
     <Reference Include="System.Servicemodel.Web" />
     <Reference Include="System.Windows" />
@@ -57,10 +52,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataSync.cs" />
+    <Compile Include="JsonPaperDeserializer.cs" />
     <Compile Include="PaperService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Users\David\work\RestSharp\RestSharp.WindowsPhone\RestSharp.WindowsPhone.csproj">
+      <Project>{F4D48DF6-316E-4963-B5C1-59CA39B431B7}</Project>
+      <Name>RestSharp.WindowsPhone</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WhitePaperBible.Data\WhitePaperBible.Data.csproj">
       <Project>{A2FECDEE-F94A-463E-A411-36C09C670AF5}</Project>
       <Name>WhitePaperBible.Data</Name>

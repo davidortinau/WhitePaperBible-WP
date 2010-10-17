@@ -5,5 +5,5 @@ C:\Development\WhitePaperBible\WhitePaperBible.Services\obj\Debug\WhitePaperBibl
 C:\Development\WhitePaperBible\WhitePaperBible.Services\obj\Debug\WhitePaperBible.Services.pdb
 C:\Development\WhitePaperBible\WhitePaperBible.Services\Bin\Debug\WhitePaperBible.Data.dll
 C:\Development\WhitePaperBible\WhitePaperBible.Services\Bin\Debug\WhitePaperBible.Data.pdb
-C:\Development\WhitePaperBible\WhitePaperBible.Services\Bin\Debug\Newtonsoft.Json.Silverlight.dll
 C:\Development\WhitePaperBible\WhitePaperBible.Services\Bin\Debug\RestSharp.WindowsPhone.dll
+C:\Development\WhitePaperBible\WhitePaperBible.Services\Bin\Debug\RestSharp.WindowsPhone.pdb

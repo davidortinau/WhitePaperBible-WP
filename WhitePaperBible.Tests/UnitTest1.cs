@@ -61,22 +61,22 @@ namespace WhitePaperBible.Tests
         //
         #endregion
 
-        [TestMethod]
-        public void CanRetrieveAListOfPapers()
-        {
-            var svc = new PaperService();
-            svc.GetPapers(onPapersReceived, onErrorReceived);
-        }
+        //[TestMethod]
+        //public void CanRetrieveAListOfPapers()
+        //{
+        //    var svc = new PaperService();
+        //    svc.GetPapers(onPapersReceived, onErrorReceived);
+        //}
 
-        private void onErrorReceived(string error)
-        {
-            Assert.Fail("received an error, you fail");
-        }
+        //private void onErrorReceived(string error)
+        //{
+        //    Assert.Fail("received an error, you fail");
+        //}
 
-        private void onPapersReceived(List<Paper> papers)
-        {
-            Assert.IsNotNull(papers, "papsers should not be null");
-            Assert.IsTrue(papers.Count > 1, "should have more than 1 paper");
-        }
+        //private void onPapersReceived(PaperCollection papers)
+        //{
+        //    Assert.IsNotNull(papers, "papsers should not be null");
+        //    Assert.IsTrue(papers.Papers.Count > 1, "should have more than 1 paper");
+        //}
     }
 }

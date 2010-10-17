@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using RestSharp;
+using RestSharp.Serializers;
 using WhitePaperBible.Data;
 
 namespace WhitePaperBible.Services
@@ -23,17 +24,16 @@ namespace WhitePaperBible.Services
         {
         }
 
-        public void GetPapers(Action<List<Data.Paper>> success, Action<string> failure)
+        public void GetPapers(Action<List<PaperNode>> success, Action<string> failure)
         {
             const string baseuri = "http://whitepaperbible.org/";
 
             var client = new RestClient(baseuri);
+            //client.AddHandler("json", new JsonPaperDeserializer());
             
-            var request = new RestRequest("papers.json", Method.GET);
-            request.RequestFormat = DataFormat.Json;
-            request.RootElement = "paper";
+            var request = new RestRequest("papers.json", Method.GET) {RequestFormat = DataFormat.Json};
 
-            client.ExecuteAsync<List<Data.Paper>>(request, (response) =>
+            client.ExecuteAsync<List<PaperNode>>(request, (response) =>
             {
                 if (response.ResponseStatus == ResponseStatus.Error)
                 {
@@ -45,6 +45,7 @@ namespace WhitePaperBible.Services
                 }
             });
         }
+
 
         private void ParsePapers_AsJson(
             object sender, DownloadStringCompletedEventArgs e)

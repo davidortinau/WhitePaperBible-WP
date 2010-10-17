@@ -72,11 +72,11 @@ namespace WhitePaperBible.Phone
             throw new Exception(obj);
         }
 
-        private void onPapersReceived(List<Paper> papers)
+        private void onPapersReceived(List<PaperNode> papers)
         {
             foreach (var paper in papers)
             {
-                this.Items.Add(paper);
+                this.Items.Add(paper.paper);
             }
 
             this.IsDataLoaded = true;

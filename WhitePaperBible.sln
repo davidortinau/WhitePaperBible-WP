@@ -16,6 +16,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhitePaperBible.Data", "Whi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhitePaperBible.Phone", "WhitePaperBible.Phone\WhitePaperBible.Phone.csproj", "{4A771FBB-7A52-443A-A6D6-DF0EF5397F3F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestSharp.WindowsPhone", "..\..\Users\David\work\RestSharp\RestSharp.WindowsPhone\RestSharp.WindowsPhone.csproj", "{F4D48DF6-316E-4963-B5C1-59CA39B431B7}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = WhitePaperBible.vsmdi
@@ -43,6 +45,10 @@ Global
 		{4A771FBB-7A52-443A-A6D6-DF0EF5397F3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A771FBB-7A52-443A-A6D6-DF0EF5397F3F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4A771FBB-7A52-443A-A6D6-DF0EF5397F3F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F4D48DF6-316E-4963-B5C1-59CA39B431B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4D48DF6-316E-4963-B5C1-59CA39B431B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4D48DF6-316E-4963-B5C1-59CA39B431B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4D48DF6-316E-4963-B5C1-59CA39B431B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
