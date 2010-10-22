@@ -23,34 +23,16 @@ namespace WhitePaperBible.Phone
     {
         public MainViewModel()
         {
+          
             this.Items = new ObservableCollection<Paper>();
+            this.Papers = new CollectionViewSource();
         }
 
         /// <summary>
         /// A collection for Paper objects.
         /// </summary>
         public ObservableCollection<Paper> Items { get; private set; }
-
-        private string _sampleProperty = "Sample Runtime Property Value";
-        /// <summary>
-        /// Sample ViewModel property; this property is used in the view to display its value using a Binding
-        /// </summary>
-        /// <returns></returns>
-        public string SampleProperty
-        {
-            get
-            {
-                return _sampleProperty;
-            }
-            set
-            {
-                if (value != _sampleProperty)
-                {
-                    _sampleProperty = value;
-                    NotifyPropertyChanged("SampleProperty");
-                }
-            }
-        }
+        public CollectionViewSource Papers { get; private set; }
 
         public bool IsDataLoaded
         {
@@ -81,6 +63,8 @@ namespace WhitePaperBible.Phone
                 this.Items.Add(paper.paper);
             }
 
+            this.Papers.Source = this.Items;
+            //this.Papers.View
             this.IsDataLoaded = true;
         }
 

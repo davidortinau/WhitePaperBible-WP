@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
@@ -65,6 +66,27 @@ namespace WhitePaperBible.Phone
         {
             base.OnNavigatedFrom(e);
             Logger.Log("");
+        }
+
+        private void SearchText_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            Logger.Log("Text: " + SearchText.Text);
+            App.ViewModel.Papers.View.Filter = new Predicate<object>(FilterBySearch);
+        }
+
+        public bool FilterBySearch(object obj)
+        {
+            var paper = obj as Paper;
+            if (paper != null)
+                if(paper.title.Contains(SearchText.Text))
+                {
+                    return true;
+                }else
+                {
+                    return false;
+                }
+            return false;
+        
         }
     }
 }
