@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 using RestSharp;
 using RestSharp.Serializers;
 using WhitePaperBible.Data;
@@ -20,18 +21,17 @@ namespace WhitePaperBible.Services
 {
     public class PaperService
     {
+        const string baseuri = "http://whitepaperbible.org/";
+
         public PaperService()
         {
         }
 
         public void GetPapers(Action<List<PaperNode>> success, Action<string> failure)
         {
-            const string baseuri = "http://whitepaperbible.org/";
-
             var client = new RestClient(baseuri);
-            //client.AddHandler("json", new JsonPaperDeserializer());
-            
-            var request = new RestRequest("papers.json", Method.GET) {RequestFormat = DataFormat.Json};
+
+            var request = new RestRequest("papers.json?caller=wpb-iPhone", Method.GET) { RequestFormat = DataFormat.Json };
 
             client.ExecuteAsync<List<PaperNode>>(request, (response) =>
             {
@@ -46,60 +46,23 @@ namespace WhitePaperBible.Services
             });
         }
 
-
-        private void ParsePapers_AsJson(
-            object sender, DownloadStringCompletedEventArgs e)
+        public void GetPaperReferences(int paperId, Action<List<ReferenceNode>> success, Action<string> failure)
         {
-            //JsonArray ary = new JsonArray();
-            var raw = e.Result;
-            /*
-            JsonArray json;
-            if (JsonArray.Parse(raw) as JsonArray == null)
-                json = new JsonArray { JsonObject.Parse(raw) as JsonObject };
-            else
-                json = JsonArray.Parse(raw) as JsonArray;
+            var client = new RestClient(baseuri);
 
-            var query = from paper in json
-                        select new Paper
-                        {
-                            title = (string)paper["paper"]["title"],
-                            id = (int)paper["paper"]["id"]
-                        };
-            List<Paper> papers = query.ToList() as List<Paper>;
+            var request = new RestRequest("papers/" + paperId.ToString() + "/references.json?caller=wpb-iPhone", Method.GET) { RequestFormat = DataFormat.Json };
 
-            foreach (Paper p in papers)
+            client.ExecuteAsync<List<ReferenceNode>>(request, (response) =>
             {
-                //this.ContentBlock.Text += p.title + Environment.NewLine;
-            }
-            */
-            // cache data http://dotnetaddict.dotnetdevelopersjournal.com/wp7_serialization_data.htm
-
-
-            //// just to put something in there
-            //this.ContentBlock.Text = papers[0].title;
-
-            //this.ContentBlock.Text = json;
-            //StringReader sr = new StringReader(json);
-            //JsonReader jsonReader = new JsonTextReader(sr);
-
-            //jsonReader.Read();
-            //Paper obj = JsonConvert.DeserializeObject(jsonReader.Value.ToString()) as Paper;
-            //this.ContentBlock.Text = obj.title;
-
-
-
-            var serializer =
-                new DataContractJsonSerializer(typeof(List<Paper>));
-
-            //DataContractJsonSerializer serializer = new DataContractJsonSerializer(products.GetType());
-            var stream =
-                            new MemoryStream(Encoding.UTF8.GetBytes(raw));
-
-            var papers = serializer.ReadObject(stream) as List<Paper>;
-
-            stream.Close();
-            //return papers;
-            //lstProducts.DataContext = products;
+                if (response.ResponseStatus == ResponseStatus.Error)
+                {
+                    failure(response.ErrorMessage);
+                }
+                else
+                {
+                    success(response.Data);
+                }
+            });
         }
     }
 

@@ -55,6 +55,8 @@
     <Compile Include="PaperCollection.cs" />
     <Compile Include="PaperNode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reference.cs" />
+    <Compile Include="ReferenceNode.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />

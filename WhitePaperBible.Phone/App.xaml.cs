@@ -18,6 +18,7 @@ namespace WhitePaperBible.Phone
     public partial class App : Application
     {
         private static MainViewModel viewModel = null;
+        private static ItemViewModel itemModel = null;
 
         /// <summary>
         /// A static ViewModel used by the views to bind against.
@@ -40,6 +41,18 @@ namespace WhitePaperBible.Phone
         /// </summary>
         /// <returns>The root frame of the Phone Application.</returns>
         public PhoneApplicationFrame RootFrame { get; private set; }
+
+        public static ItemViewModel ItemModel
+        {
+            get
+            {
+                // Delay creation of the view model until necessary
+                if (itemModel == null)
+                    itemModel = new ItemViewModel();
+
+                return itemModel;
+            }
+        }
 
         /// <summary>
         /// Constructor for the Application object.
@@ -124,6 +137,7 @@ namespace WhitePaperBible.Phone
 
         // Avoid double-initialization
         private bool phoneApplicationInitialized = false;
+       
 
         // Do not add any additional code to this method
         private void InitializePhoneApplication()

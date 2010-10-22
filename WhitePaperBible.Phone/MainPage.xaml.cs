@@ -10,6 +10,8 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
+using WhitePaperBible.Data;
+using WhitePaperBible.Phone.Infrastructure;
 
 namespace WhitePaperBible.Phone
 {
@@ -18,6 +20,8 @@ namespace WhitePaperBible.Phone
         // Constructor
         public MainPage()
         {
+            Logger.Log("");
+
             InitializeComponent();
 
             // Set the data context of the listbox control to the sample data
@@ -33,6 +37,7 @@ namespace WhitePaperBible.Phone
                 return;
 
             // Navigate to the new page
+            //var paper = (Paper) MainListBox.SelectedItem;
             NavigationService.Navigate(new Uri("/DetailsPage.xaml?selectedItem=" + MainListBox.SelectedIndex, UriKind.Relative));
 
             // Reset selected index to -1 (no selection)
@@ -42,10 +47,24 @@ namespace WhitePaperBible.Phone
         // Load data for the ViewModel Items
         private void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
+            Logger.Log("");
             if (!App.ViewModel.IsDataLoaded)
             {
                 App.ViewModel.LoadData();
             }
+        }
+
+        protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+
+            Logger.Log("");
+        }
+
+        protected override void OnNavigatedFrom(System.Windows.Navigation.NavigationEventArgs e)
+        {
+            base.OnNavigatedFrom(e);
+            Logger.Log("");
         }
     }
 }

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Net;
@@ -10,72 +12,87 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
+using WhitePaperBible.Data;
+using WhitePaperBible.Phone.Helpers;
+using WhitePaperBible.Phone.Infrastructure;
+using WhitePaperBible.Services;
 
 namespace WhitePaperBible.Phone
 {
     public class ItemViewModel : INotifyPropertyChanged
     {
-        private string _lineOne;
-        /// <summary>
-        /// Sample ViewModel property; this property is used in the view to display its value using a Binding.
-        /// </summary>
-        /// <returns></returns>
-        public string LineOne
+        private ObservableCollection<Reference> Items;
+        private bool _isDataLoaded;
+        private string _referencesHtmlContent;
+        private Paper _paper;
+
+        public ItemViewModel()
         {
-            get
-            {
-                return _lineOne;
-            }
+            this.Items = new ObservableCollection<Reference>();
+        }
+        
+        public Paper Paper
+        {
+            get { return _paper; }
             set
             {
-                if (value != _lineOne)
+                if(value != _paper)
                 {
-                    _lineOne = value;
-                    NotifyPropertyChanged("LineOne");
+                    _paper = value;
+                    NotifyPropertyChanged("Paper");
                 }
             }
         }
 
-        private string _lineTwo;
-        /// <summary>
-        /// Sample ViewModel property; this property is used in the view to display its value using a Binding.
-        /// </summary>
-        /// <returns></returns>
-        public string LineTwo
+        public string ReferencesHtmlContent
         {
-            get
-            {
-                return _lineTwo;
-            }
+            get { return _referencesHtmlContent; }
             set
             {
-                if (value != _lineTwo)
+                if(value != _referencesHtmlContent)
                 {
-                    _lineTwo = value;
-                    NotifyPropertyChanged("LineTwo");
+                    _referencesHtmlContent = value;
+                    NotifyPropertyChanged("ReferencesHtmlContent");
                 }
             }
         }
 
-        private string _lineThree;
-        /// <summary>
-        /// Sample ViewModel property; this property is used in the view to display its value using a Binding.
-        /// </summary>
-        /// <returns></returns>
-        public string LineThree
+        public bool IsDataLoaded
         {
-            get
+            get { return _isDataLoaded; }
+            private set { _isDataLoaded = value; NotifyPropertyChanged("IsDataLoaded"); }
+        }
+
+        /// <summary>
+        /// Creates and adds a few ItemViewModel objects into the Items collection.
+        /// </summary>
+        public void LoadData(int paperId)
+        {
+            var svc = new PaperService();
+            svc.GetPaperReferences(paperId, onReferencesReceived, onError);
+
+        }
+
+        private void onError(string obj)
+        {
+            throw new Exception(obj);
+        }
+
+        private void onReferencesReceived(List<ReferenceNode> references)
+        {
+            var referencesContent = string.Empty;
+            foreach (var reference in references)
             {
-                return _lineThree;
+                this.Items.Add(reference.reference);
+                referencesContent += reference.reference.content;
             }
-            set
-            {
-                if (value != _lineThree)
-                {
-                    _lineThree = value;
-                    NotifyPropertyChanged("LineThree");
-                }
-            }
+
+            Logger.Log("MODEL onReferencesReceived");
+
+            IsDataLoaded = true;
+            ReferencesHtmlContent = WebBrowserHelper.WrapHtml(referencesContent, 450);
+
+            
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -86,6 +103,13 @@ namespace WhitePaperBible.Phone
             {
                 handler(this, new PropertyChangedEventArgs(propertyName));
             }
+        }
+
+        public void Reset()
+        {
+            Paper = null;
+            ReferencesHtmlContent = string.Empty;
+            IsDataLoaded = false;
         }
     }
 }

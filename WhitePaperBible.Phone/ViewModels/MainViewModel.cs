@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Collections.ObjectModel;
+using System.Windows.Threading;
 using WhitePaperBible.Data;
 using WhitePaperBible.Services;
 
@@ -76,6 +77,7 @@ namespace WhitePaperBible.Phone
         {
             foreach (var paper in papers)
             {
+                //new Dispatcher().BeginInvoke(() => { this.Items.Add(paper.paper); });
                 this.Items.Add(paper.paper);
             }
 
