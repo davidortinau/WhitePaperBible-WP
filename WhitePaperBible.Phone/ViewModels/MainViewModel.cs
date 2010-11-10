@@ -21,18 +21,48 @@ namespace WhitePaperBible.Phone
 {
     public class MainViewModel : INotifyPropertyChanged
     {
+        public const string SEARCH_WATERMARK = "Search for...";
+
+        private CollectionViewSource _papers;
+
         public MainViewModel()
         {
           
             this.Items = new ObservableCollection<Paper>();
-            this.Papers = new CollectionViewSource();
+            //this.Papers = new ObservableCollection<Paper>();
+            //this.PapersCVS = new CollectionViewSource();
+        }
+
+        public string SearchText
+        {
+            get
+            {
+                if(string.Empty == _searchText)
+                {
+                    _searchText = SEARCH_WATERMARK;
+                }
+                return _searchText;
+            }
+            set { _searchText = value; }
         }
 
         /// <summary>
         /// A collection for Paper objects.
         /// </summary>
         public ObservableCollection<Paper> Items { get; private set; }
-        public CollectionViewSource Papers { get; private set; }
+        public CollectionViewSource Papers
+        {
+            get
+            {
+                if (null == _papers)
+                {
+                    _papers = new CollectionViewSource();
+                }
+                return _papers;
+            }
+        }
+        //public ObservableCollection<Paper> Papers { get; private set; }
+        
 
         public bool IsDataLoaded
         {
@@ -64,8 +94,20 @@ namespace WhitePaperBible.Phone
             }
 
             this.Papers.Source = this.Items;
-            //this.Papers.View
+            //RefreshPapers();
+            Papers.View.CurrentChanged += handleCurrentPaperChanged;
             this.IsDataLoaded = true;
+            NotifyPropertyChanged("IsDataLoaded");
+        }
+
+        public void RefreshPapers()
+        {
+            Items = (ObservableCollection<Paper>)Papers.View.SourceCollection;
+        }
+
+        private void handleCurrentPaperChanged(object sender, EventArgs e)
+        {
+            //throw new NotImplementedException();
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -76,6 +118,38 @@ namespace WhitePaperBible.Phone
             {
                 handler(this, new PropertyChangedEventArgs(propertyName));
             }
+        }
+
+        private string _searchText;
+        public void SearchPapers(string text)
+        {
+            _searchText = text;
+            //Papers.View.Filter = new Predicate<object>(FilterBySearch);
+
+            this.Papers.View.Filter = r =>
+            {
+                if (null == r) return true;
+                var rm = (Paper)r;
+                var meets = rm.title.ToLowerInvariant().Contains(text.ToLowerInvariant())
+                    || rm.description.ToLowerInvariant().Contains(text.ToLowerInvariant());
+                return meets;
+            };
+        }
+
+        public bool FilterBySearch(object obj)
+        {
+            var paper = obj as Paper;
+            if (paper != null)
+                if (paper.title.ToLower().Contains(_searchText.ToLower()))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            return false;
+
         }
     }
 }

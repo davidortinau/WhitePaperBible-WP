@@ -20,49 +20,51 @@
       <File id="A2FECDEE-F94A-463E-A411-36C09C670AF5/f:PaperNode.cs" caret="385" fromTop="14" />
       <File id="F4D48DF6-316E-4963-B5C1-59CA39B431B7/d:Deserializers/f:JsonDeserializer.cs/l:..?..?restsharp?deserializers?JsonDeserializer.cs" caret="1396" fromTop="20" />
       <File id="F4D48DF6-316E-4963-B5C1-59CA39B431B7/f:Http.Async.cs/l:..?RestSharp?Http.Async.cs" caret="5204" fromTop="13" />
-      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:App.xaml" caret="0" fromTop="0" />
-      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:MainPage.xaml" caret="878" fromTop="12" />
-      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:MainPage.xaml.cs" caret="757" fromTop="12" />
-      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:App.xaml.cs" caret="3553" fromTop="35" />
       <File id="A2FECDEE-F94A-463E-A411-36C09C670AF5/f:Reference.cs" caret="483" fromTop="16" />
       <File id="A2FECDEE-F94A-463E-A411-36C09C670AF5/f:ReferenceNode.cs" caret="398" fromTop="14" />
-      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/d:ViewModels/f:MainViewModel.cs" caret="708" fromTop="5" />
-      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:DetailsPage.xaml.cs" caret="1590" fromTop="23" />
-      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:DetailsPage.xaml" caret="763" fromTop="10" />
-      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/d:ViewModels/f:ItemViewModel.cs" caret="2848" fromTop="5" />
-      <File id="B3DF9CA9-FF06-4722-8C99-3C053BD09603/f:PaperService.cs" caret="2063" fromTop="21" />
+      <File id="B3DF9CA9-FF06-4722-8C99-3C053BD09603/f:PaperService.cs" caret="1866" fromTop="45" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/d:Helpers/f:WebBrowserHelper.cs" caret="3409" fromTop="19" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:DetailsPage.xaml" caret="2013" fromTop="31" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/d:Infrastructure/f:Logger.cs" caret="231" fromTop="7" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/d:ViewModels/f:ItemViewModel.cs" caret="2294" fromTop="14" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:DetailsPage.xaml.cs" caret="1328" fromTop="0" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/d:ViewModels/f:MainViewModel.cs" caret="438" fromTop="5" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:App.xaml" caret="851" fromTop="17" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:App.xaml.cs" caret="3463" fromTop="29" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:MainPage.xaml.cs" caret="1332" fromTop="25" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:MainPage.xaml" caret="1000" fromTop="0" />
     </RecentFiles>
     <RecentEdits>
-      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:MainPage.xaml" caret="1916" fromTop="30" />
-      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:MainPage.xaml.cs" caret="1647" fromTop="32" />
-      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:MainPage.xaml.cs" caret="1279" fromTop="21" />
-      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:DetailsPage.xaml" caret="1677" fromTop="25" />
-      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:DetailsPage.xaml" caret="1994" fromTop="30" />
-      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:DetailsPage.xaml.cs" caret="1642" fromTop="29" />
-      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:DetailsPage.xaml.cs" caret="724" fromTop="8" />
-      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:App.xaml.cs" caret="1667" fromTop="40" />
-      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:App.xaml.cs" caret="5121" fromTop="45" />
-      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:App.xaml.cs" caret="599" fromTop="17" />
-      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:App.xaml.cs" caret="1614" fromTop="26" />
-      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/d:ViewModels/f:ItemViewModel.cs" caret="2505" fromTop="28" />
-      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/d:ViewModels/f:ItemViewModel.cs" caret="2603" fromTop="32" />
-      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/d:ViewModels/f:ItemViewModel.cs" caret="2926" fromTop="28" />
-      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/d:ViewModels/f:ItemViewModel.cs" caret="3302" fromTop="42" />
-      <File id="A2FECDEE-F94A-463E-A411-36C09C670AF5/f:Reference.cs" caret="483" fromTop="16" />
-      <File id="A2FECDEE-F94A-463E-A411-36C09C670AF5/f:ReferenceNode.cs" caret="398" fromTop="14" />
-      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/d:ViewModels/f:ItemViewModel.cs" caret="3181" fromTop="27" />
-      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/d:ViewModels/f:ItemViewModel.cs" caret="634" fromTop="12" />
-      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/d:ViewModels/f:ItemViewModel.cs" caret="1937" fromTop="45" />
-      <File id="B3DF9CA9-FF06-4722-8C99-3C053BD09603/f:PaperService.cs" caret="643" fromTop="9" />
-      <File id="B3DF9CA9-FF06-4722-8C99-3C053BD09603/f:PaperService.cs" caret="862" fromTop="17" />
-      <File id="B3DF9CA9-FF06-4722-8C99-3C053BD09603/f:PaperService.cs" caret="2052" fromTop="45" />
-      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:DetailsPage.xaml.cs" caret="1026" fromTop="20" />
-      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:DetailsPage.xaml.cs" caret="1507" fromTop="32" />
-      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:DetailsPage.xaml.cs" caret="1604" fromTop="36" />
-      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/d:ViewModels/f:ItemViewModel.cs" caret="2771" fromTop="22" />
-      <File id="B3DF9CA9-FF06-4722-8C99-3C053BD09603/f:PaperService.cs" caret="1397" fromTop="22" />
-      <File id="B3DF9CA9-FF06-4722-8C99-3C053BD09603/f:PaperService.cs" caret="1625" fromTop="26" />
-      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:DetailsPage.xaml" caret="763" fromTop="10" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:DetailsPage.xaml.cs" caret="2793" fromTop="32" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:DetailsPage.xaml.cs" caret="1903" fromTop="22" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:DetailsPage.xaml.cs" caret="1365" fromTop="10" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:DetailsPage.xaml.cs" caret="1202" fromTop="13" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:DetailsPage.xaml.cs" caret="2568" fromTop="15" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/d:ViewModels/f:ItemViewModel.cs" caret="3320" fromTop="37" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/d:ViewModels/f:ItemViewModel.cs" caret="2014" fromTop="18" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/d:ViewModels/f:ItemViewModel.cs" caret="2627" fromTop="23" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:MainPage.xaml.cs" caret="1871" fromTop="27" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:MainPage.xaml.cs" caret="633" fromTop="18" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:MainPage.xaml.cs" caret="2366" fromTop="40" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:DetailsPage.xaml.cs" caret="3197" fromTop="38" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:DetailsPage.xaml.cs" caret="3051" fromTop="35" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:DetailsPage.xaml.cs" caret="987" fromTop="3" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:MainPage.xaml" caret="1744" fromTop="17" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/d:ViewModels/f:MainViewModel.cs" caret="775" fromTop="15" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/d:ViewModels/f:MainViewModel.cs" caret="952" fromTop="21" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/d:ViewModels/f:MainViewModel.cs" caret="1891" fromTop="27" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/d:ViewModels/f:MainViewModel.cs" caret="1861" fromTop="24" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:MainPage.xaml.cs" caret="3023" fromTop="11" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:MainPage.xaml.cs" caret="2746" fromTop="14" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:MainPage.xaml.cs" caret="3002" fromTop="23" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:MainPage.xaml.cs" caret="2527" fromTop="5" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:MainPage.xaml" caret="2065" fromTop="30" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:MainPage.xaml.cs" caret="941" fromTop="16" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:MainPage.xaml" caret="3360" fromTop="18" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:MainPage.xaml" caret="2739" fromTop="9" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:MainPage.xaml.cs" caret="1283" fromTop="27" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:MainPage.xaml.cs" caret="1669" fromTop="33" />
+      <File id="4A771FBB-7A52-443A-A6D6-DF0EF5397F3F/f:MainPage.xaml" caret="816" fromTop="11" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -85,28 +87,28 @@
     <ItemStatistics item="Default">
       <Item value="Assert`0" priority="2" />
       <Item value="papers" priority="3" />
-      <Item value="var" priority="5" />
-      <Item value="Paper`0" priority="20" />
-      <Item value="List" priority="13" />
+      <Item value="var" priority="10" />
+      <Item value="Paper`0" priority="26" />
+      <Item value="List" priority="14" />
       <Item value="void" priority="0" />
       <Item value="Data" priority="0" />
       <Item value="client" priority="3" />
-      <Item value="this" priority="3" />
+      <Item value="this" priority="16" />
       <Item value="throw" priority="0" />
-      <Item value="new" priority="2" />
+      <Item value="new" priority="3" />
       <Item value="Exception" priority="0" />
       <Item value="ResponseStatus`0" priority="0" />
       <Item value="response" priority="2" />
       <Item value="svc" priority="0" />
       <Item value="PaperService`0" priority="3" />
       <Item value="Exception`0" priority="0" />
-      <Item value="obj" priority="0" />
-      <Item value="foreach" priority="1" />
-      <Item value="paper" priority="2" />
+      <Item value="obj" priority="1" />
+      <Item value="foreach" priority="2" />
+      <Item value="paper" priority="4" />
       <Item value="request" priority="6" />
       <Item value="Json" priority="0" />
-      <Item value="public" priority="7" />
-      <Item value="string" priority="3" />
+      <Item value="public" priority="11" />
+      <Item value="string" priority="8" />
       <Item value="ListBox`0" priority="0" />
       <Item value="PapersCollection`0" priority="7" />
       <Item value="json" priority="0" />
@@ -115,7 +117,7 @@
       <Item value="DataFormat`0" priority="1" />
       <Item value="List`0" priority="0" />
       <Item value="T`0" priority="0" />
-      <Item value="return" priority="0" />
+      <Item value="return" priority="4" />
       <Item value="target" priority="0" />
       <Item value="PaperCollection`0" priority="1" />
       <Item value="Name" priority="0" />
@@ -128,9 +130,42 @@
       <Item value="Reference`0" priority="1" />
       <Item value="ReferenceNode`0" priority="1" />
       <Item value="references" priority="0" />
-      <Item value="reference" priority="0" />
-      <Item value="DataContext" priority="0" />
+      <Item value="reference" priority="2" />
+      <Item value="DataContext" priority="3" />
       <Item value="uint" priority="0" />
+      <Item value="if" priority="8" />
+      <Item value="App`0" priority="14" />
+      <Item value="value" priority="4" />
+      <Item value="NotifyPropertyChanged`0" priority="2" />
+      <Item value="_isDataLoaded" priority="0" />
+      <Item value="e" priority="1" />
+      <Item value="referencesHtml" priority="3" />
+      <Item value="TemplateBindingExpression`0" priority="0" />
+      <Item value="webBrowser1" priority="1" />
+      <Item value="_paper" priority="0" />
+      <Item value="ReferencesContent" priority="5" />
+      <Item value="_referencesHtmlContent" priority="2" />
+      <Item value="browser" priority="0" />
+      <Item value="WebBrowserHelper`0" priority="0" />
+      <Item value="DateTime`0" priority="1" />
+      <Item value="override" priority="2" />
+      <Item value="false" priority="3" />
+      <Item value="IsDataLoaded" priority="1" />
+      <Item value="Paper" priority="0" />
+      <Item value="null" priority="0" />
+      <Item value="ReferencesHtmlContent" priority="0" />
+      <Item value="txt" priority="0" />
+      <Item value="SearchText" priority="2" />
+      <Item value="as" priority="2" />
+      <Item value="AssemblyPart`0" priority="0" />
+      <Item value="CollectionViewSource`0" priority="2" />
+      <Item value="CollectionViewSource" priority="0" />
+      <Item value="Papers" priority="0" />
+      <Item value="bool" priority="0" />
+      <Item value="object" priority="0" />
+      <Item value="true" priority="0" />
+      <Item value="else" priority="0" />
+      <Item value="MainListBox_SelectionChanged`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
       <Item value="LastIndexOf`0" priority="0" />
@@ -157,7 +192,8 @@
       <Item value="GetPapers`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:WhitePaperBible.Phone.MainViewModel">
-      <Item value="Items" priority="2" />
+      <Item value="Items" priority="6" />
+      <Item value="Papers" priority="3" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.ObjectModel.ObservableCollection`1">
       <Item value="Add`0" priority="1" />
@@ -193,15 +229,82 @@
     <ItemStatistics item="Qualified:System.Windows.Controls.ListBox">
       <Item value="SelectedItem" priority="0" />
       <Item value="SelectedIndex" priority="0" />
+      <Item value="SelectionChanged" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:WhitePaperBible.Data.Paper">
       <Item value="id" priority="1" />
+      <Item value="title" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:WhitePaperBible.Data.ReferenceNode">
-      <Item value="reference" priority="0" />
+      <Item value="reference" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Int32">
       <Item value="ToString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@WhitePaperBible.Phone.App">
+      <Item value="ItemModel" priority="12" />
+      <Item value="ViewModel" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WhitePaperBible.Phone.ItemViewModel">
+      <Item value="IsDataLoaded" priority="3" />
+      <Item value="PropertyChanged" priority="0" />
+      <Item value="ReferencesContent" priority="2" />
+      <Item value="ReferencesHtmlContent" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ComponentModel.PropertyChangedEventArgs">
+      <Item value="PropertyName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Empty" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WhitePaperBible.Data.Reference">
+      <Item value="content" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WhitePaperBible.Phone.DetailsPage">
+      <Item value="ContentText" priority="0" />
+      <Item value="webBrowser1" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.TextBlock">
+      <Item value="Text" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.Phone.Controls.WebBrowser">
+      <Item value="DataContext" priority="0" />
+      <Item value="NavigateToString`0" priority="3" />
+      <Item value="IsEnabled" priority="0" />
+      <Item value="Style" priority="0" />
+      <Item value="Source" priority="0" />
+      <Item value="InvalidateArrange`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@WhitePaperBible.Phone.Helpers.WebBrowserHelper">
+      <Item value="WrapHtml`0" priority="0" />
+      <Item value="HtmlProperty" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="ToShortTimeString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.TextChangedEventArgs">
+      <Item value="OriginalSource" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.TextBox">
+      <Item value="Text" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WhitePaperBible.Phone.MainPage">
+      <Item value="Resources" priority="0" />
+      <Item value="MainListBox" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Data.CollectionViewSource">
+      <Item value="Source" priority="1" />
+      <Item value="View" priority="0" />
+      <Item value="Filter" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Contains`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ComponentModel.ICollectionView">
+      <Item value="Filter" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

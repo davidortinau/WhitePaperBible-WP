@@ -46,6 +46,8 @@ namespace WhitePaperBible.Phone
                    // webBrowser1.Source = WebBrowserHelper.WrapHtml(referencesHtml, 460);
                    //webBrowser1.NavigateToString( WebBrowserHelper.WrapHtml(referencesHtml, 460) );
                    ReferencesContent.NavigateToString(App.ItemModel.ReferencesHtmlContent);
+                   loadingBar.Visibility = Visibility.Collapsed;
+                   loadingBar.IsIndeterminate = false;
                }
             }
         }
@@ -63,15 +65,27 @@ namespace WhitePaperBible.Phone
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             Logger.Log("DetailsPage - onNavigatedTo");
+            loadingBar.Visibility = Visibility.Visible;
+            loadingBar.IsIndeterminate = true;
 
-            string selectedIndex = "";
-            if (NavigationContext.QueryString.TryGetValue("selectedItem", out selectedIndex))
+            string paperID = "";
+            if (NavigationContext.QueryString.TryGetValue("paperID", out paperID))
             {
-                int index = int.Parse(selectedIndex);
-                var paper = (Paper) App.ViewModel.Items[index];
+                int id = int.Parse(paperID);
+                //var paper = (Paper) App.ViewModel.Items[index];
 
-                App.ItemModel.Paper = paper;
-                App.ItemModel.LoadData(paper.id);
+                foreach (var paper
+                    in App.ViewModel.Items)
+                {
+                    if(paper.id == id)
+                    {
+                        App.ItemModel.Paper = paper;
+                        break;
+                    }
+                }
+
+                //App.ItemModel.Paper = paper;
+                App.ItemModel.LoadData(id);
             }
         }
 

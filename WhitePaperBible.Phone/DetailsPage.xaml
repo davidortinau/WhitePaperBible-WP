@@ -25,6 +25,7 @@
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
             <TextBlock x:Name="PageTitle" Text="White Paper Bible" Style="{StaticResource PhoneTextNormalStyle}"/>
             <TextBlock x:Name="ListTitle" Text="{Binding Paper.title}" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <ProgressBar x:Name="loadingBar" IsIndeterminate="True" Style="{StaticResource PerformanceProgressBar}"/>        
         </StackPanel>
 
         <!--ContentPanel contains details text. Place additional content here
@@ -32,7 +33,7 @@
         -->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <phone:WebBrowser HorizontalAlignment="Left" x:Name="ReferencesContent" 
-                              VerticalAlignment="Top" Height="690" Width="456"
+                              VerticalAlignment="Top" Height="690" Width="456" FontSize="24"
                                 Loaded="ReferencesContent_Loaded" />
         </Grid>
     </Grid>
