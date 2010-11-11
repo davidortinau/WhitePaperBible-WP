@@ -19,3 +19,7 @@ C:\Development\WhitePaperBible\WhitePaperBible.Phone\Bin\Debug\Newtonsoft.Json.S
 C:\Development\WhitePaperBible\WhitePaperBible.Phone\Bin\Debug\WhitePaperBible.Data.pdb
 C:\Development\WhitePaperBible\WhitePaperBible.Phone\Bin\Debug\WhitePaperBible.Services.pdb
 C:\Development\WhitePaperBible\WhitePaperBible.Phone\Bin\Debug\RestSharp.WindowsPhone.pdb
+C:\Development\WhitePaperBible\WhitePaperBible.Phone\Bin\Debug\Microsoft.Phone.Controls.Toolkit.pdb
+C:\Development\WhitePaperBible\WhitePaperBible.Phone\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml
+C:\Development\WhitePaperBible\WhitePaperBible.Phone\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Development\WhitePaperBible\WhitePaperBible.Phone\Bin\Debug\Microsoft.Phone.Controls.xml

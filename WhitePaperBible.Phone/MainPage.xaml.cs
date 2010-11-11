@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;
 using Microsoft.Phone.Controls;
+using Microsoft.Phone.Shell;
 using WhitePaperBible.Data;
 using WhitePaperBible.Phone.Infrastructure;
 
@@ -10,6 +11,8 @@ namespace WhitePaperBible.Phone
 {
     public partial class MainPage : PhoneApplicationPage
     {
+        private PhoneApplicationService appService = PhoneApplicationService.Current;
+
         public MainPage()
         {
             Logger.Log("");
@@ -50,7 +53,6 @@ namespace WhitePaperBible.Phone
             var paper = (Paper)MainListBox.SelectedItem;
             
             NavigationService.Navigate(new Uri("/DetailsPage.xaml?paperID=" + paper.id, UriKind.Relative));
-
             MainListBox.SelectedIndex = -1;
         }
 
@@ -58,7 +60,9 @@ namespace WhitePaperBible.Phone
         private void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
             Logger.Log("");
-            //SearchText.Text = SEARCH_WATERMARK;
+            if(SearchText.Text == string.Empty)
+                SearchText.Text = MainViewModel.SEARCH_WATERMARK;
+            
             if (!App.ViewModel.IsDataLoaded)
             {
                 App.ViewModel.LoadData();
@@ -69,17 +73,20 @@ namespace WhitePaperBible.Phone
 
         protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
         {
+            if (appService.State.ContainsKey("searchWords"))
+                SearchText.Text = appService.State["searchWords"].ToString();
+
             MainListBox.SelectedIndex = -1;
             base.OnNavigatedTo(e);
-
-            Logger.Log("");
         }
 
         protected override void OnNavigatedFrom(System.Windows.Navigation.NavigationEventArgs e)
         {
-            base.OnNavigatedFrom(e);
-            Logger.Log("");
+            appService.State["searchWords"] = SearchText.Text;
+
             MainListBox.SelectedIndex = -1;
+
+            base.OnNavigatedFrom(e);
         }
 
         private void SearchText_TextChanged(object sender, TextChangedEventArgs e)
@@ -93,7 +100,7 @@ namespace WhitePaperBible.Phone
         {
             if (SearchText.Text == string.Empty)
             {
-                App.ViewModel.SearchText = MainViewModel.SEARCH_WATERMARK;
+                SearchText.Text = MainViewModel.SEARCH_WATERMARK;
             }
         }
 
@@ -101,7 +108,7 @@ namespace WhitePaperBible.Phone
         {
             if(SearchText.Text == MainViewModel.SEARCH_WATERMARK)
             {
-                App.ViewModel.SearchText = string.Empty;
+                SearchText.Text = string.Empty;
             }
         }
     }
