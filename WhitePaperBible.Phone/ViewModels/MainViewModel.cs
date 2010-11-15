@@ -1,19 +1,13 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Text;
-using System.Windows;
-using System.Windows.Controls;
+using System.IO;
+using System.IO.IsolatedStorage;
+using System.Runtime.Serialization;
 using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using System.Collections.ObjectModel;
-using System.Windows.Threading;
 using WhitePaperBible.Data;
+using WhitePaperBible.Phone.Models;
 using WhitePaperBible.Services;
 
 
@@ -25,12 +19,11 @@ namespace WhitePaperBible.Phone
 
         private CollectionViewSource _papers;
 
+        private PaperModel _paperModel;
+
         public MainViewModel()
         {
-          
-            this.Items = new ObservableCollection<Paper>();
-            //this.Papers = new ObservableCollection<Paper>();
-            //this.PapersCVS = new CollectionViewSource();
+          Items = new ObservableCollection<Paper>();
         }
 
         public string SearchText
@@ -75,9 +68,16 @@ namespace WhitePaperBible.Phone
         /// </summary>
         public void LoadData()
         {
-            var svc = new PaperService();
-            svc.GetPapers(onPapersReceived, onError);
-
+            _paperModel = PaperModel.FromFile();
+            if (_paperModel.Papers.Count > 0)
+            {
+                this.Papers.Source = _paperModel.Papers;
+            }
+            else
+            {
+                var svc = new PaperService();
+                svc.GetPapers(onPapersReceived, onError);
+            }
         }
 
         private void onError(string obj)
@@ -87,23 +87,25 @@ namespace WhitePaperBible.Phone
 
         private void onPapersReceived(List<PaperNode> papers)
         {
+            _paperModel.Papers = new ObservableCollection<Paper>();
             foreach (var paper in papers)
             {
                 //new Dispatcher().BeginInvoke(() => { this.Items.Add(paper.paper); });
-                this.Items.Add(paper.paper);
+                _paperModel.Papers.Add(paper.paper);
             }
 
-            this.Papers.Source = this.Items;
+            this.Papers.Source = Items = _paperModel.Papers;
+            _paperModel.SaveToFile();
             //RefreshPapers();
             Papers.View.CurrentChanged += handleCurrentPaperChanged;
             this.IsDataLoaded = true;
             NotifyPropertyChanged("IsDataLoaded");
         }
 
-        public void RefreshPapers()
-        {
-            Items = (ObservableCollection<Paper>)Papers.View.SourceCollection;
-        }
+        //public void RefreshPapers()
+        //{
+        //    Items = (ObservableCollection<Paper>)Papers.View.SourceCollection;
+        //}
 
         private void handleCurrentPaperChanged(object sender, EventArgs e)
         {
