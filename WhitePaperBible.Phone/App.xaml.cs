@@ -7,20 +7,20 @@ namespace WhitePaperBible.Phone
 {
     public partial class App : Application
     {
-        private static MainViewModel viewModel = null;
-        private static ItemViewModel itemModel = null;
+        private static PapersViewModel viewModel = null;
+        private static PaperDetailViewModel itemModel = null;
 
         /// <summary>
         /// A static ViewModel used by the views to bind against.
         /// </summary>
         /// <returns>The MainViewModel object.</returns>
-        public static MainViewModel ViewModel
+        public static PapersViewModel ViewModel
         {
             get
             {
                 // Delay creation of the view model until necessary
                 if (viewModel == null)
-                    viewModel = new MainViewModel();
+                    viewModel = new PapersViewModel();
 
                 return viewModel;
             }
@@ -32,13 +32,13 @@ namespace WhitePaperBible.Phone
         /// <returns>The root frame of the Phone Application.</returns>
         public PhoneApplicationFrame RootFrame { get; private set; }
 
-        public static ItemViewModel ItemModel
+        public static PaperDetailViewModel ItemModel
         {
             get
             {
                 // Delay creation of the view model until necessary
                 if (itemModel == null)
-                    itemModel = new ItemViewModel();
+                    itemModel = new PaperDetailViewModel();
 
                 return itemModel;
             }
@@ -56,7 +56,7 @@ namespace WhitePaperBible.Phone
             if (System.Diagnostics.Debugger.IsAttached)
             {
                 // Display the current frame rate counters.
-                Application.Current.Host.Settings.EnableFrameRateCounter = false;
+                //Application.Current.Host.Settings.EnableFrameRateCounter = false;
 
                 // Show the areas of the app that are being redrawn in each frame.
                 //Application.Current.Host.Settings.EnableRedrawRegions = true;

@@ -1,10 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhitePaperBible.Services", "WhitePaperBible.Services\WhitePaperBible.Services.csproj", "{B3DF9CA9-FF06-4722-8C99-3C053BD09603}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhitePaperBible.Tests", "WhitePaperBible.Tests\WhitePaperBible.Tests.csproj", "{914D0528-BF1D-43EC-A736-6E9069047252}"
-EndProject
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D613D7F8-F930-4A94-8A53-F2578B4924D3}"
 	ProjectSection(SolutionItems) = preProject
 		Local.testsettings = Local.testsettings
@@ -12,16 +8,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		WhitePaperBible.vsmdi = WhitePaperBible.vsmdi
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhitePaperBible.Services", "WhitePaperBible.Services\WhitePaperBible.Services.csproj", "{B3DF9CA9-FF06-4722-8C99-3C053BD09603}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhitePaperBible.Tests", "WhitePaperBible.Tests\WhitePaperBible.Tests.csproj", "{914D0528-BF1D-43EC-A736-6E9069047252}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhitePaperBible.Data", "WhitePaperBible.Data\WhitePaperBible.Data.csproj", "{A2FECDEE-F94A-463E-A411-36C09C670AF5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhitePaperBible.Phone", "WhitePaperBible.Phone\WhitePaperBible.Phone.csproj", "{4A771FBB-7A52-443A-A6D6-DF0EF5397F3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestSharp.WindowsPhone", "..\..\Users\David\work\RestSharp\RestSharp.WindowsPhone\RestSharp.WindowsPhone.csproj", "{F4D48DF6-316E-4963-B5C1-59CA39B431B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhitePaperBible.Mobile", "WhitePaperBible.Mobile\WhitePaperBible.Mobile.csproj", "{D69E5309-868E-4D13-B275-5A0BAA1962DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestSharp.WindowsPhone", "..\common\RestSharp\RestSharp.WindowsPhone\RestSharp.WindowsPhone.csproj", "{F4D48DF6-316E-4963-B5C1-59CA39B431B7}"
 EndProject
 Global
-	GlobalSection(TestCaseManagementSettings) = postSolution
-		CategoryFile = WhitePaperBible.vsmdi
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -45,6 +44,12 @@ Global
 		{4A771FBB-7A52-443A-A6D6-DF0EF5397F3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A771FBB-7A52-443A-A6D6-DF0EF5397F3F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4A771FBB-7A52-443A-A6D6-DF0EF5397F3F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D69E5309-868E-4D13-B275-5A0BAA1962DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D69E5309-868E-4D13-B275-5A0BAA1962DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D69E5309-868E-4D13-B275-5A0BAA1962DB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D69E5309-868E-4D13-B275-5A0BAA1962DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D69E5309-868E-4D13-B275-5A0BAA1962DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D69E5309-868E-4D13-B275-5A0BAA1962DB}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{F4D48DF6-316E-4963-B5C1-59CA39B431B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F4D48DF6-316E-4963-B5C1-59CA39B431B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4D48DF6-316E-4963-B5C1-59CA39B431B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -52,5 +57,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = WhitePaperBible.vsmdi
 	EndGlobalSection
 EndGlobal

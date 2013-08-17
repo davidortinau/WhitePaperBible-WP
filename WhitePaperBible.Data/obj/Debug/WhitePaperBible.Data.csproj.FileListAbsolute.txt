@@ -3,3 +3,8 @@ C:\Development\WhitePaperBible\WhitePaperBible.Data\Bin\Debug\WhitePaperBible.Da
 C:\Development\WhitePaperBible\WhitePaperBible.Data\obj\Debug\ResolveAssemblyReference.cache
 C:\Development\WhitePaperBible\WhitePaperBible.Data\obj\Debug\WhitePaperBible.Data.dll
 C:\Development\WhitePaperBible\WhitePaperBible.Data\obj\Debug\WhitePaperBible.Data.pdb
+C:\work\WhitePaperBible\WhitePaperBible.Data\Bin\Debug\WhitePaperBible.Data.dll
+C:\work\WhitePaperBible\WhitePaperBible.Data\Bin\Debug\WhitePaperBible.Data.pdb
+C:\work\WhitePaperBible\WhitePaperBible.Data\obj\Debug\WhitePaperBible.Data.csprojResolveAssemblyReference.cache
+C:\work\WhitePaperBible\WhitePaperBible.Data\obj\Debug\WhitePaperBible.Data.dll
+C:\work\WhitePaperBible\WhitePaperBible.Data\obj\Debug\WhitePaperBible.Data.pdb

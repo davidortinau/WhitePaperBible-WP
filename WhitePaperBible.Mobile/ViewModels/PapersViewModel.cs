@@ -1,19 +1,16 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Collections.Generic;
-using System.IO;
-using System.IO.IsolatedStorage;
-using System.Runtime.Serialization;
 using System.Windows.Data;
 using System.Collections.ObjectModel;
 using WhitePaperBible.Data;
-using WhitePaperBible.Phone.Models;
+using WhitePaperBible.Mobile.Models;
 using WhitePaperBible.Services;
 
 
-namespace WhitePaperBible.Phone
+namespace WhitePaperBible.Mobile
 {
-    public class MainViewModel : INotifyPropertyChanged
+    public class PapersViewModel : INotifyPropertyChanged
     {
         public const string SEARCH_WATERMARK = "Search for...";
 
@@ -21,7 +18,7 @@ namespace WhitePaperBible.Phone
 
         private PaperModel _paperModel;
 
-        public MainViewModel()
+        public PapersViewModel()
         {
           Items = new ObservableCollection<Paper>();
         }
@@ -71,12 +68,16 @@ namespace WhitePaperBible.Phone
             _paperModel = PaperModel.FromFile();
             if (_paperModel.Papers.Count > 0)
             {
-                this.Papers.Source = _paperModel.Papers;
+                this.Papers.Source = this.Items = _paperModel.Papers;
+                Papers.View.CurrentChanged += handleCurrentPaperChanged;
+                this.IsDataLoaded = true;
+                NotifyPropertyChanged("IsDataLoaded");
             }
             else
             {
                 var svc = new PaperService();
                 svc.GetPapers(onPapersReceived, onError);
+
             }
         }
 

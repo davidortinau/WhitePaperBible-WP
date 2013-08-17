@@ -48,6 +48,7 @@ namespace WhitePaperBible.Phone
                    ReferencesContent.NavigateToString(App.ItemModel.ReferencesHtmlContent);
                    loadingBar.Visibility = Visibility.Collapsed;
                    loadingBar.IsIndeterminate = false;
+                   ReferencesContent.Visibility = System.Windows.Visibility.Visible;
                }
             }
         }
@@ -67,6 +68,7 @@ namespace WhitePaperBible.Phone
             Logger.Log("DetailsPage - onNavigatedTo");
             loadingBar.Visibility = Visibility.Visible;
             loadingBar.IsIndeterminate = true;
+            ReferencesContent.Visibility = System.Windows.Visibility.Collapsed;
 
             string paperID = "";
             if (NavigationContext.QueryString.TryGetValue("paperID", out paperID))

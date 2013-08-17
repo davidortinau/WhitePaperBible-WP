@@ -1,0 +1,14 @@
+﻿<xapCache source="C:\Development\WhitePaperBible\WhitePaperBible.Mobile\Bin\Debug\WhitePaperBible.Mobile.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="12/30/2010 3:03:16 PM">
+  <file source="C:\Development\WhitePaperBible\WhitePaperBible.Mobile\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="11/17/2010 10:35:51 PM" />
+  <file source="C:\Development\WhitePaperBible\WhitePaperBible.Mobile\obj\Debug\WhitePaperBible.Mobile.dll" archivePath="WhitePaperBible.Mobile.dll" lastWriteTime="12/30/2010 3:03:16 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v7.0\Libraries\Silverlight\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="9/1/2010 3:51:10 AM" />
+  <file source="C:\Development\Silverlight for Windows Phone Toolkit Source Code\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="11/10/2010 11:04:23 PM" />
+  <file source="C:\Development\WhitePaperBible\WhitePaperBible.Data\Bin\Debug\WhitePaperBible.Data.dll" archivePath="WhitePaperBible.Data.dll" lastWriteTime="12/30/2010 3:03:13 PM" />
+  <file source="C:\Development\WhitePaperBible\WhitePaperBible.Services\Bin\Debug\WhitePaperBible.Services.dll" archivePath="WhitePaperBible.Services.dll" lastWriteTime="12/30/2010 3:03:13 PM" />
+  <file source="C:\Development\WhitePaperBible\WhitePaperBible.Services\Bin\Debug\RestSharp.WindowsPhone.dll" archivePath="RestSharp.WindowsPhone.dll" lastWriteTime="10/17/2010 4:24:07 PM" />
+  <file source="C:\Development\WhitePaperBible\WhitePaperBible.Services\Bin\Debug\Newtonsoft.Json.Silverlight.dll" archivePath="Newtonsoft.Json.Silverlight.dll" lastWriteTime="10/15/2010 9:02:33 PM" />
+  <file source="C:\Development\WhitePaperBible\WhitePaperBible.Mobile\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="11/17/2010 10:36:23 PM" />
+  <file source="C:\Development\WhitePaperBible\WhitePaperBible.Mobile\Background.png" archivePath="Background.png" lastWriteTime="11/17/2010 10:36:23 PM" />
+  <file source="C:\Development\WhitePaperBible\WhitePaperBible.Mobile\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="11/17/2010 10:36:23 PM" />
+  <file source="C:\Development\WhitePaperBible\WhitePaperBible.Mobile\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="11/17/2010 10:55:57 PM" />
+</xapCache>

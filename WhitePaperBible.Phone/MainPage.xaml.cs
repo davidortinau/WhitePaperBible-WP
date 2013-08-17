@@ -61,7 +61,7 @@ namespace WhitePaperBible.Phone
         {
             Logger.Log("");
             if(SearchText.Text == string.Empty)
-                SearchText.Text = MainViewModel.SEARCH_WATERMARK;
+                SearchText.Text = PapersViewModel.SEARCH_WATERMARK;
             
             if (!App.ViewModel.IsDataLoaded)
             {
@@ -92,7 +92,7 @@ namespace WhitePaperBible.Phone
         private void SearchText_TextChanged(object sender, TextChangedEventArgs e)
         {
             Logger.Log("Text: " + SearchText.Text);
-            if (SearchText.Text != MainViewModel.SEARCH_WATERMARK)
+            if (SearchText.Text != PapersViewModel.SEARCH_WATERMARK)
                 App.ViewModel.SearchPapers(SearchText.Text);
         }
 
@@ -100,13 +100,13 @@ namespace WhitePaperBible.Phone
         {
             if (SearchText.Text == string.Empty)
             {
-                SearchText.Text = MainViewModel.SEARCH_WATERMARK;
+                SearchText.Text = PapersViewModel.SEARCH_WATERMARK;
             }
         }
 
         private void SearchText_GotFocus(object sender, RoutedEventArgs e)
         {
-            if(SearchText.Text == MainViewModel.SEARCH_WATERMARK)
+            if (SearchText.Text == PapersViewModel.SEARCH_WATERMARK)
             {
                 SearchText.Text = string.Empty;
             }

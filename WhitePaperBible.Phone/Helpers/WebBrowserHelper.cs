@@ -55,7 +55,7 @@ namespace WhitePaperBible.Phone.Helpers
                 "body {{background:{0};color:{1};font-family:'Segoe WP';font-size:{2}pt;margin:0;padding:0 }}",
                 GetBrowserColor("PhoneBackgroundColor"),
                 GetBrowserColor("PhoneForegroundColor"),
-                (double)Application.Current.Resources["PhoneFontSizeNormal"]));
+                (double)Application.Current.Resources["PhoneFontSizeLarge"]));
             head.Append(string.Format(
                 "a {{color:{0}}}",
                 GetBrowserColor("PhoneAccentColor")));

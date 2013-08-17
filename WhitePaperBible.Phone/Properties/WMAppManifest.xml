@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.0">
-  <App xmlns="" ProductID="{a1a35898-cab6-4e3c-b27c-50fae3c520c2}" Title="White Paper Bible" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="WhitePaperBible.Phone author" Description="Sample description" Publisher="WhitePaperBible.Phone">
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.1">
+  <App xmlns="" ProductID="{dcd19975-7295-49cb-8f4c-3ebbada5ac71}" Title="White Paper Bible" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="WhitePaperBible.Phone author" Description="Sample description" Publisher="WhitePaperBible.Phone">
     <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_GAMERSERVICES" />

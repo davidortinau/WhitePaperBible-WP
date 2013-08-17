@@ -19,14 +19,14 @@ using WhitePaperBible.Services;
 
 namespace WhitePaperBible.Phone
 {
-    public class ItemViewModel : INotifyPropertyChanged
+    public class PaperDetailViewModel : INotifyPropertyChanged
     {
         private ObservableCollection<Reference> Items;
         private bool _isDataLoaded;
         private string _referencesHtmlContent;
         private Paper _paper;
 
-        public ItemViewModel()
+        public PaperDetailViewModel()
         {
             this.Items = new ObservableCollection<Reference>();
         }

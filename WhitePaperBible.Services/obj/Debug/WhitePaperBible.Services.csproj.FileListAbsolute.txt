@@ -7,3 +7,12 @@ C:\Development\WhitePaperBible\WhitePaperBible.Services\Bin\Debug\WhitePaperBibl
 C:\Development\WhitePaperBible\WhitePaperBible.Services\Bin\Debug\WhitePaperBible.Data.pdb
 C:\Development\WhitePaperBible\WhitePaperBible.Services\Bin\Debug\RestSharp.WindowsPhone.dll
 C:\Development\WhitePaperBible\WhitePaperBible.Services\Bin\Debug\RestSharp.WindowsPhone.pdb
+C:\work\WhitePaperBible\WhitePaperBible.Services\obj\Debug\WhitePaperBible.Services.csprojResolveAssemblyReference.cache
+C:\work\WhitePaperBible\WhitePaperBible.Services\obj\Debug\WhitePaperBible.Services.dll
+C:\work\WhitePaperBible\WhitePaperBible.Services\obj\Debug\WhitePaperBible.Services.pdb
+C:\work\WhitePaperBible\WhitePaperBible.Services\Bin\Debug\WhitePaperBible.Services.dll
+C:\work\WhitePaperBible\WhitePaperBible.Services\Bin\Debug\WhitePaperBible.Services.pdb
+C:\work\WhitePaperBible\WhitePaperBible.Services\Bin\Debug\RestSharp.WindowsPhone.dll
+C:\work\WhitePaperBible\WhitePaperBible.Services\Bin\Debug\WhitePaperBible.Data.dll
+C:\work\WhitePaperBible\WhitePaperBible.Services\Bin\Debug\RestSharp.WindowsPhone.pdb
+C:\work\WhitePaperBible\WhitePaperBible.Services\Bin\Debug\WhitePaperBible.Data.pdb
